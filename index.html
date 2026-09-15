@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Sakchi Spice House - Authentic Indian cuisine, biryani, kebabs and traditional dishes.">
+
+    <title>Sakchi Spice House | Authentic Indian Cuisine</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+
+            <div class="logo-icon">
+                🍴
+            </div>
+
+            <div class="logo-text">
+                <strong>Sakchi</strong>
+                <span>SPICE HOUSE</span>
+            </div>
+
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="#home" class="nav-link active">Home</a>
+
+            <a href="#menu" class="nav-link">Menu</a>
+
+            <a href="#about" class="nav-link">About</a>
+
+            <a href="#gallery" class="nav-link">Gallery</a>
+
+            <a href="#reviews" class="nav-link">Reviews</a>
+
+            <a href="#contact" class="nav-link">Contact</a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="cart-button" id="cartButton" aria-label="Open cart">
+
+                🛒
+
+                <span class="cart-count" id="cartCount">0</span>
+
+            </button>
+
+            <a href="#menu" class="nav-order-button">
+                Order Now
+            </a>
+
+        </div>
+
+        <button class="mobile-menu-button" id="mobileMenuButton">
+            ☰
+        </button>
+
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="eyebrow">
+            AUTHENTIC INDIAN CUISINE
+        </span>
+
+        <h1>
+            Something special
+            <br>
+            <span>for everyone.</span>
+        </h1>
+
+        <p>
+            Traditional flavours, aromatic spices and freshly prepared
+            dishes served with a modern touch.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#menu" class="primary-button">
+                Explore Menu
+            </a>
+
+            <a href="#about" class="secondary-button">
+                Our Story
+            </a>
+
+        </div>
+
+        <div class="hero-features">
+
+            <div>
+                <strong>15+</strong>
+                <span>Signature Dishes</span>
+            </div>
+
+            <div>
+                <strong>100%</strong>
+                <span>Fresh Ingredients</span>
+            </div>
+
+            <div>
+                <strong>4.8★</strong>
+                <span>Customer Rating</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TODAY'S SPECIAL
+========================= -->
+
+<section class="special-section">
+
+    <div class="special-container">
+
+        <div class="special-content">
+
+            <span class="eyebrow">
+                TODAY'S SPECIAL
+            </span>
+
+            <h2>
+                Royal Chicken
+                <span>Biryani</span>
+            </h2>
+
+            <p>
+                Fragrant basmati rice, tender chicken, saffron,
+                caramelized onions and our secret blend of traditional
+                spices.
+            </p>
+
+            <div class="special-price">
+
+                <span class="old-price">
+                    ₹280
+                </span>
+
+                <strong>
+                    ₹220
+                </strong>
+
+            </div>
+
+            <button
+                class="primary-button"
+                id="specialOrderButton">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <div class="special-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1563379091339-03246963d51a?auto=format&fit=crop&w=1200&q=90"
+                alt="Royal Chicken Biryani"
+            >
+
+            <div class="discount-badge">
+                <strong>20%</strong>
+                <span>OFF</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MENU
+========================= -->
+
+<section class="menu-section" id="menu">
+
+    <div class="section-heading">
+
+        <span class="eyebrow">
+            OUR MENU
+        </span>
+
+        <h2>
+            Delicious food,
+            <span>made with love.</span>
+        </h2>
+
+        <p>
+            Explore our selection of Indian favourites and house
+            specialties.
+        </p>
+
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="menu-tools">
+
+        <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+                type="text"
+                id="menuSearch"
+                placeholder="Search dishes..."
+                autocomplete="off"
+            >
+
+        </div>
+
+
+        <!-- CATEGORIES -->
+
+        <div class="category-buttons">
+
+            <button
+                class="category-button active"
+                data-category="all">
+                All
+            </button>
+
+            <button
+                class="category-button"
+                data-category="biryani">
+                Biryani
+            </button>
+
+            <button
+                class="category-button"
+                data-category="chicken">
+                Chicken
+            </button>
+
+            <button
+                class="category-button"
+                data-category="mutton">
+                Mutton
+            </button>
+
+            <button
+                class="category-button"
+                data-category="starters">
+                Starters
+            </button>
+
+            <button
+                class="category-button"
+                data-category="vegetarian">
+                Vegetarian
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOD CARDS -->
+
+    <div
+        class="menu-grid"
+        id="menuGrid">
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about-section" id="about">
+
+    <div class="about-image">
+
+        <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85"
+            alt="Restaurant interior"
+        >
+
+    </div>
+
+    <div class="about-content">
+
+        <span class="eyebrow">
+            OUR STORY
+        </span>
+
+        <h2>
+            A taste of tradition
+            <span>in every bite.</span>
+        </h2>
+
+        <p>
+            At Sakchi Spice House, we believe great food begins with
+            quality ingredients, traditional recipes and a little
+            patience.
+        </p>
+
+        <p>
+            From aromatic biryanis to smoky kebabs and comforting
+            vegetarian favourites, every dish is prepared with care
+            and served fresh.
+        </p>
+
+        <div class="about-points">
+
+            <div>
+                <span>✓</span>
+                Fresh ingredients
+            </div>
+
+            <div>
+                <span>✓</span>
+                Traditional recipes
+            </div>
+
+            <div>
+                <span>✓</span>
+                Made fresh to order
+            </div>
+
+            <div>
+                <span>✓</span>
+                Family-friendly dining
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section class="gallery-section" id="gallery">
+
+    <div class="section-heading">
+
+        <span class="eyebrow">
+            FOOD & MOMENTS
+        </span>
+
+        <h2>
+            A feast for
+            <span>the eyes.</span>
+        </h2>
+
+    </div>
+
+    <div class="gallery-grid">
+
+        <img
+            src="https://images.unsplash.com/photo-1563379091339-03246963d51a?auto=format&fit=crop&w=800&q=85"
+            alt="Biryani"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=800&q=85"
+            alt="Chicken tikka"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=85"
+            alt="Paneer"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1545247181-516773cae754?auto=format&fit=crop&w=800&q=85"
+            alt="Indian curry"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=85"
+            alt="Samosa"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=85"
+            alt="Kebab"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     REVIEWS
+========================= -->
+
+<section class="reviews-section" id="reviews">
+
+    <div class="section-heading">
+
+        <span class="eyebrow">
+            CUSTOMER REVIEWS
+        </span>
+
+        <h2>
+            Loved by our
+            <span>customers.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="reviews-grid">
+
+        <article class="review-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "The biryani was absolutely delicious. The rice was
+                perfectly cooked and the chicken was very tender."
+            </p>
+
+            <strong>
+                Rahul Kumar
+            </strong>
+
+            <span>
+                Local Guide
+            </span>
+
+        </article>
+
+
+        <article class="review-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Really good food and generous portions. The chicken
+                tikka and paneer were both excellent."
+            </p>
+
+            <strong>
+                Ayesha Khan
+            </strong>
+
+            <span>
+                Verified Customer
+            </span>
+
+        </article>
+
+
+        <article class="review-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "A lovely place for family dinner. Great flavours,
+                friendly service and reasonable prices."
+            </p>
+
+            <strong>
+                Arjun Singh
+            </strong>
+
+            <span>
+                Verified Customer
+            </span>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-content">
+
+        <span class="eyebrow">
+            VISIT US
+        </span>
+
+        <h2>
+            Come hungry.
+            <span>Leave happy.</span>
+        </h2>
+
+        <p>
+            We are ready to serve you delicious food made fresh
+            with traditional flavours.
+        </p>
+
+        <div class="contact-details">
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📍
+                </div>
+
+                <div>
+                    <strong>Address</strong>
+                    <span>Sakchi, Jamshedpur, Jharkhand</span>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📞
+                </div>
+
+                <div>
+                    <strong>Phone</strong>
+                    <span>+91 9776641756</span>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    🕐
+                </div>
+
+                <div>
+                    <strong>Opening Hours</strong>
+                    <span>11:00 AM - 11:00 PM</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <form
+        class="contact-form"
+        id="contactForm">
+
+        <h3>
+            Send us a message
+        </h3>
+
+        <input
+            type="text"
+            id="contactName"
+            placeholder="Your name"
+            required
+        >
+
+        <input
+            type="email"
+            id="contactEmail"
+            placeholder="Your email"
+            required
+        >
+
+        <textarea
+            id="contactMessage"
+            placeholder="Your message"
+            rows="5"
+            required></textarea>
+
+        <button
+            type="submit"
+            class="primary-button">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    🍴
+                </div>
+
+                <div class="logo-text">
+                    <strong>Sakchi</strong>
+                    <span>SPICE HOUSE</span>
+                </div>
+
+            </div>
+
+            <p>
+                Authentic Indian flavours, freshly prepared for
+                everyone.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>
+                Contact
+            </h4>
+
+            <span>Sakchi, Jamshedpur</span>
+            <span>+91 98765 43210</span>
+            <span>Open 11 AM - 11 PM</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Sakchi Spice House. Demo website.
+        </span>
+
+        <span>
+            Designed & developed for portfolio demonstration.
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     CART DRAWER
+========================= -->
+
+<div
+    class="cart-overlay"
+    id="cartOverlay">
+</div>
+
+
+<aside
+    class="cart-drawer"
+    id="cartDrawer">
+
+    <div class="cart-header">
+
+        <h2>
+            Your Cart
+        </h2>
+
+        <button
+            id="closeCart"
+            class="close-cart">
+            ×
+        </button>
+
+    </div>
+
+
+    <div
+        class="cart-items"
+        id="cartItems">
+
+        <div class="empty-cart">
+
+            <div>
+                🛒
+            </div>
+
+            <h3>
+                Your cart is empty
+            </h3>
+
+            <p>
+                Add something delicious from the menu.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cartTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+        <button
+            class="checkout-button"
+            id="checkoutButton">
+            Order on WhatsApp
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- =========================
+     TOAST
+========================= -->
+
+<div
+    class="toast"
+    id="toast">
+    Added to cart
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
